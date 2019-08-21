@@ -2,6 +2,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Ввести с консоли число в бинарном формате.
+ * Перевести его в десятичный формат, записать в переменную int и вывести на экран.
+ */
 public class Main {
 
     public static void main(String[] args) {
