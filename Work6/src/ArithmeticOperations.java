@@ -20,11 +20,11 @@ public class ArithmeticOperations {
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             double x, y, z, avg;
             System.out.print("Введите число x: ");
-            x = Integer.parseInt(reader.readLine());
+            x = Double.parseDouble(reader.readLine());
             System.out.print("Введите число y: ");
-            y = Integer.parseInt(reader.readLine());
+            y = Double.parseDouble(reader.readLine());
             System.out.print("Введите число z: ");
-            z = Integer.parseInt(reader.readLine());
+            z = Double.parseDouble(reader.readLine());
 
             System.out.println("Среднее арифметическое: " + (avg = (x + y + z) / 3));
             avg = (long) avg / 2;
