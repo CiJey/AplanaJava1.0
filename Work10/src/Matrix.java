@@ -21,15 +21,26 @@ public class Matrix {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[0].length; j++) {
                     System.out.print("Введите число: ");
-                    matrix[j][i] = Integer.parseInt(reader.readLine());
+                    matrix[i][j] = Integer.parseInt(reader.readLine());
                 }
             }
+            printMatrix(matrix);
             System.out.println("Первая строка матрицы:");
-            for (int[] i : matrix) {
-                System.out.print(i[0] * 3 + " ");
+            for (int i : matrix[0]) {
+                System.out.print(i * 3 + " ");
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    private static void printMatrix(int[][] arr) {
+        System.out.println("Матрица:");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 }
